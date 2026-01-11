@@ -1,6 +1,11 @@
 # MINI SEARCH ENGINE
 ====================================================================================
 
+# MY FIRST EVER GITHUB PUBLISH
+# C++ SIMPLE MINI SEARCH ENGINE
+# 1:33AM 1/12/2026 (3RD SEMESTER UNIVERSITY)
+
+
 *** WORKFLOW ***
 /SearchEngineProject
 │
