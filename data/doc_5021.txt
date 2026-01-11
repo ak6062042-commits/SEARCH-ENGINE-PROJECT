@@ -1,0 +1,4 @@
+Bronze, i, 106, 118, 172, 173, 207;
+  Chinese vessels of, i, 204;
+  ornaments, i, 114;
+  weapons, i, 106

@@ -1,0 +1,17 @@
+England, i, 605, ii, 64, 66, 178, 200, 433, 470-71;
+  history (_early_), i, 52, 101, 645, ii, 40, 50-54, 66, 614;
+  (_under the Normans_), ii, 67, 615;
+  (_in the 13th and 14th centuries_), ii, 176-77;
+  (_Civil war_), ii, 218, 221-25, 281;
+  (_war with Holland_), ii, 225-26, 282;
+  (_war with Spain_), ii, 220, 225;
+  (_reign of Charles II_), ii, 225-26;
+  (_in 18th century_), ii, 226-28;
+  (_and America_), ii, 253-54;
+  (_union with Ireland_), ii, 621;
+  _political and constitutional_, i, 463,
+    465, ii, 194, 216-17, 219-21, 226-28, 236;
+  religion, i, 642, ii, 49-54, 99, 150,
+    162, 206, 220, 221, 225, 252, 253, 282;
+  social, ii, 154-56, 244, 271-73, 324, 334, 617.
+  (_See also_ Britain, Great Britain, _and_ the Great War)

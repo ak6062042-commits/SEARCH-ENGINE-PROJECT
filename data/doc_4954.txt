@@ -1,0 +1,2 @@
+Bone carvings, i, 95-99;
+  implements, i, 90, 96-99, 114

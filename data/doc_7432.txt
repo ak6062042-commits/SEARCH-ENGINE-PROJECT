@@ -1,0 +1,1 @@
+Planets, i, 3 _sq._, 30

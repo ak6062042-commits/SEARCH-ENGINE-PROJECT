@@ -1,0 +1,2 @@
+     “c” (except in the combinations “ch” and “_ch_”), “q” and “x” are
+     not used.

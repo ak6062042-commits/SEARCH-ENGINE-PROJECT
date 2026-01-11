@@ -1,0 +1,2 @@
+Basque language, i, 161, 162, 167, 189;
+  race, i, 161, 162, 168, ii, 490

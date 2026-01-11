@@ -1,0 +1,2 @@
+Lydian language, i, 162;
+  script, i, 228

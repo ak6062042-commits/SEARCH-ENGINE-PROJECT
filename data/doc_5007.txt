@@ -1,0 +1,5 @@
+Britain, i, 59, 113, 145, 196, 273, 489, 534, 613, ii, 41, 51, 66;
+  invasions of, ii, 554, 605, ii, 130, 610, 611;
+  Roman, i, 219, 507, 509, 522, 525, 526, 564, i, 40, 50, 610;
+  Keltic, i, 299, 554.
+  (_See also_ England _and_ Great Britain)

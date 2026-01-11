@@ -1,0 +1,6 @@
+Chinese, the, i, 63, 157;
+  classics, i, 225, 639;
+  coinage, i, 631;
+  emperor, i, 240, 252, 557;
+  language, i, 157, 158, 162, 224-26, 638;
+  script, i, 224-27, 272, 638-40, ii, 262

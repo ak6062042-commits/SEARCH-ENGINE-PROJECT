@@ -1,0 +1,4 @@
+Africa, Central, i, 158, 558;
+  East, i, 42, 178;
+  South (_see_ South Africa);
+  West, i, 219, ii, 193

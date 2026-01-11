@@ -1,0 +1,2 @@
+Schools, monastic, i, 613, ii, 60;
+  public, ii, 269 _sq._, 428-30

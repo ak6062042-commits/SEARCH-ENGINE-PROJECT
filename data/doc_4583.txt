@@ -1,0 +1,2 @@
+American king-crab, i, 10;
+  picture writing, i, 207

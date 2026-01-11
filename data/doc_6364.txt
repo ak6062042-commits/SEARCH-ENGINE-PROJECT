@@ -1,0 +1,2 @@
+Japanese, i, 66, 147, 636, ii, 464;
+  language and writing, i, 156, 638

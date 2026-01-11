@@ -1,0 +1,3 @@
+Australian language, i, 162;
+  lung-fish, i, 25;
+  throwing-stick, i, 90

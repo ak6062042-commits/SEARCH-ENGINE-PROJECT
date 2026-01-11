@@ -1,0 +1,3 @@
+     “s” is used only for the sibilant “s” (as in “toast,” tōst,
+     “place,” plās); the sonant “s” (as in “toes,” “plays”) is
+     printed “z” (tōz, plāz).

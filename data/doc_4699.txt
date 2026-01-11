@@ -1,0 +1,4 @@
+Art, Buddhist, i, 428;
+  Cretan, i, 215;
+  Neolithic, i, 130;
+  Palæolithic, i, 92-99, 123

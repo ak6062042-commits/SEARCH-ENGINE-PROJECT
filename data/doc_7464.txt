@@ -1,0 +1,3 @@
+Polynesia, i, 147, 162;
+  languages of, i, 158, 164;
+  peoples of, i, 109, 148, 159, 177, 353

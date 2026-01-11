@@ -1,0 +1,3 @@
+Leather, Arabian, ii, 38;
+  money, i, 220, ii, 89;
+  as clothing, i, 408

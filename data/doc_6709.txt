@@ -1,0 +1,3 @@
+Magdalenian Age, i, 96, 97;
+  clothing, i, 408;
+  hunters, i, 317

@@ -1,0 +1,3 @@
+Peter, St., i, 114, 585, ii, 57, 99;
+  the Great, ii, 243 _sq._, 259, 440, 620;
+  the Hermit, ii, 75 _sq._

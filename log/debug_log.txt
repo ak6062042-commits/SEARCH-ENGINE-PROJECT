@@ -1,0 +1,20 @@
+[Mon Jan 12 00:04:09 2026], [TOKEN],  [ WARNING ] [- ERROR::TOKEN->!!!NOT CLEANED CORRECTLY!!!-]
+
+[Mon Jan 12 00:04:09 2026], [QUERY],  [ WARNING ] [-Invalid tokens in query-]
+
+[Mon Jan 12 00:06:54 2026], [QUERY],  [ INFO ] [-Token not found in index: ab-]
+
+[Mon Jan 12 00:06:58 2026], [QUERY],  [ INFO ] [-No prefix match for token: anas-]
+
+[Mon Jan 12 00:07:02 2026], [QUERY],  [ INFO ] [-No prefix match for token: fg-]
+
+[Mon Jan 12 00:10:44 2026], [QUERY],  [ INFO ] [-Token not found in index: intell-]
+
+[Mon Jan 12 00:35:22 2026], [TOKEN],  [ WARNING ] [- ERROR::TOKEN->!!!NOT CLEANED CORRECTLY!!!-]
+
+[Mon Jan 12 00:35:22 2026], [QUERY],  [ WARNING ] [-Invalid query tokens-]
+
+[Mon Jan 12 00:35:28 2026], [TOKEN],  [ WARNING ] [- ERROR::TOKEN->!!!NOT CLEANED CORRECTLY!!!-]
+
+[Mon Jan 12 00:35:28 2026], [QUERY],  [ WARNING ] [-Invalid query tokens-]
+

@@ -1,0 +1,14 @@
+Implements, bone, i, 99;
+  bronze, i, 132;
+  Chellean, i, 70;
+  copper, i, 105;
+  earliest use of, i, 67-68;
+  flint, i, 71, 76-81, 88, 91, 96, 99, 107, 114;
+  horn, i, 90, 107, 116;
+  iron, i, 107;
+  Neolithic, i, 104-05, 114, 132;
+  Palæolithic, i, 76, 104, 137;
+  Pliocene, i, 68-69;
+  stone, i, 57, 67, 69, 75, 80, 88, 96, 104, 106, 273;
+  use of by animals, i, 67;
+  wooden, i, 76

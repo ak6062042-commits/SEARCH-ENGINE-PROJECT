@@ -1,0 +1,3 @@
+Military organization, i, 190;
+  service, i, 311;
+  tactics, ii, 234

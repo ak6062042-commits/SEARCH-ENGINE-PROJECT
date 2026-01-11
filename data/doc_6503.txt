@@ -1,0 +1,2 @@
+Korean alphabet, i, 638;
+  language, i, 156

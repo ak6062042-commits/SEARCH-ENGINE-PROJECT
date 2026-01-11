@@ -1,0 +1,3 @@
+Hindu deities, i, 437, 439;
+  priests, i, 180;
+  schools, ii, 137

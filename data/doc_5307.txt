@@ -1,0 +1,8 @@
+Coinage, earliest, i, 220;
+  Athenian, i, 220;
+  Bactrian, i, 396;
+  Carthaginian, i, 468;
+  Ephthalite, i, 629;
+  Lydian, i, 316;
+  pre-Roman British, i, 396;
+  Roman, i, 455, 471

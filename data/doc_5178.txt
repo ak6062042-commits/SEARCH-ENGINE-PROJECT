@@ -1,0 +1,3 @@
+Cave drawings, i, 93, 94;
+  dwellings, i, 167;
+  men, i, 66, 72, 76, 78, 88
