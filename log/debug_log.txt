@@ -26,3 +26,7 @@
 
 [Mon Jan 12 14:14:58 2026], [TOKEN],  [ WARNING ] [- ERROR::TOKEN->!!!NOT CLEANED CORRECTLY!!!-]
 
+[Mon Jan 12 14:23:13 2026], [QUERY],  [ INFO ] [-No prefix found for token: compilerrrrrrrrrrrrrrr-]
+
+[Mon Jan 12 14:23:25 2026], [QUERY],  [ INFO ] [-No prefix found for token: anas-]
+
