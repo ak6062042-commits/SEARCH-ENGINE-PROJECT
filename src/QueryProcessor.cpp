@@ -8,57 +8,55 @@ QueryProcessor::QueryProcessor(DocumentStore& ds, InvertedIndex& idx, Trie& tr)
 
 QueryProcessor::~QueryProcessor() = default;
 
-[[nodiscard]] auto QueryProcessor::processQuery(const std::string& query, std::size_t topK) -> std::vector<RankedResult>
+auto QueryProcessor::processQuery(
+    const std::string& query,
+    Mode mode
+) -> std::vector<Result>
 {
-    std::unordered_map<DocumentStore::Docid, int> scores;
-    auto tokens = strutil.tokenize(query);
+    std::vector<Result> final_results;
+    std::unordered_map<DocumentStore::Docid, int> score_map;
+    std::unordered_map<DocumentStore::Docid, int> doc_hit_count;
 
-    if (!strutil.isValidToken(tokens))
-    {
-        report.enable_module("QUERY");
-        report.log("QUERY", DEBUG_log::WARNING, "Invalid query tokens");
-        report.disable_module("QUERY");
-        return {};
-    }
+    auto tokens = strutil.tokenize(query);
+    if (!strutil.isValidToken(tokens)) return final_results;
+
+    const int token_count = static_cast<int>(tokens.size());
 
     for (auto& token : tokens)
     {
-        auto normalized = strutil.normalizeword(token);
-        auto postings = index.getPostings(normalized);
+        std::string normalized = strutil.normalizeword(token);
+        if (normalized.empty()) continue;
 
-        if (!postings)
-        {
-            continue;
-        }
+        if (!trie.startsWith(normalized)) continue;
+
+        auto postings = index.getPostings(normalized);
+        if (!postings) continue;
 
         for (const auto& [docid, freq] : *postings)
         {
-            scores[docid] += freq;
+            score_map[docid] += freq;
+            doc_hit_count[docid]++;
         }
     }
 
-    std::vector<RankedResult> ranked;
-    ranked.reserve(scores.size());
-
-    for (const auto& [docid, score] : scores)
+    for (const auto& [docid, score] : score_map)
     {
-        ranked.push_back({docid, score});
+        if (mode == Mode::AND)
+        {
+            if (doc_hit_count[docid] != token_count)
+                continue;
+        }
+
+        final_results.push_back({ docid, score });
     }
 
-    std::sort(ranked.begin(), ranked.end(),
-    [](const RankedResult& a, const RankedResult& b)
-    {
-        if (a.score != b.score)
-        return a.score > b.score;
-        return a.docid < b.docid;
-    });
+    std::sort(
+        final_results.begin(),
+        final_results.end(),
+        [](const Result& a, const Result& b) {
+            return a.score > b.score;
+        }
+    );
 
-
-    if (topK > 0 && ranked.size() > topK)
-    {
-        ranked.resize(topK);
-    }
-
-
-    return ranked;
+    return final_results;
 }

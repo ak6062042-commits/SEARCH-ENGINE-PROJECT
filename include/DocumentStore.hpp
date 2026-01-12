@@ -28,6 +28,7 @@ class DocumentStore{
 
         [[nodiscard]] auto getFilename(Docid id) const -> const std::string&;
         [[nodiscard]] auto getFilepath(Docid id) const -> const std::string&;
+        [[nodiscard]] auto getFilesize(Docid id) const -> std::size_t;
 
         [[nodiscard]] auto hasDocument(const std::string& filename) const -> bool;
         [[nodiscard]] auto getDocID(const std::string& filename) const -> Docid;

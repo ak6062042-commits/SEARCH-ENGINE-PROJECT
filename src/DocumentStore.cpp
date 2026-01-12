@@ -99,3 +99,9 @@ const std::string& filepath,std::size_t filesize) -> Docid
     }
     return documents;
 }
+
+[[nodiscard]] auto DocumentStore::getFilesize(Docid id) const -> std::size_t
+{
+    const size_t num_files = documents[id].filesize;
+    return num_files;
+}

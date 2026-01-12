@@ -19,7 +19,8 @@ int main()
     std::vector<std::string> filepaths;
     dfutil.scanDataFolder(filenames, filepaths);
 
-    for (size_t i = 0; i < filenames.size(); ++i) {
+    for (size_t i = 0; i < filenames.size(); ++i)
+    {
         std::ifstream file(filepaths[i]);
         if (!file.is_open()) continue;
 
@@ -33,48 +34,66 @@ int main()
             filesize
         );
 
-        StrUtil strutil;
         std::string line;
+        StrUtil util;
 
-        while (std::getline(file, line)) {
-            auto tokens = strutil.tokenize(strutil.trim(line));
-            for (auto& token : tokens) {
-                std::string word = strutil.normalizeword(token);
-                if (!word.empty()) {
-                    index.addWord(word, docid);
-                    trie.insert(word);
+        while (std::getline(file, line))
+        {
+            line = util.trim(line);
+            auto tokens = util.tokenize(line);
+
+            for (auto& token : tokens)
+            {
+                std::string normalized = util.normalizeword(token);
+                if (!normalized.empty())
+                {
+                    index.addWord(normalized, docid);
+                    trie.insert(normalized);
                 }
             }
         }
     }
 
-    std::cout << "Index built with "
-              << docStore.documentCount()
-              << " documents.\n";
+    std::cout << "\nIndex built successfully\n";
+    std::cout << "Documents indexed: " << docStore.documentCount() << "\n";
 
-    std::string query;
-    while (true) {
-        std::cout << "\nSearch (or 'exit'): ";
+    while (true)
+    {
+        std::string query;
+        int mode_choice;
+
+        std::cout << "\nEnter query (or 'exit'): ";
         std::getline(std::cin, query);
         if (query == "exit") break;
 
-        auto results = qp.processQuery(query/*, 20 ->for top 20 */ );
+        std::cout << "Mode (1 = OR, 2 = AND): ";
+        std::cin >> mode_choice;
+        std::cin.ignore();
 
-        if (results.empty()) {
-            std::cout << "No results found.\n";
+        QueryProcessor::Mode mode =
+            (mode_choice == 2)
+            ? QueryProcessor::Mode::AND
+            : QueryProcessor::Mode::OR;
+
+        auto results = qp.processQuery(query, mode);
+
+        if (results.empty())
+        {
+            std::cout << "\nNo documents matched.\n";
             continue;
         }
 
-        std::cout << "\nRank  Score  Filename\n";
-        std::cout << "---------------------------\n";
+        std::cout << "\nMatched documents:\n";
 
-        int rank = 1;
-        for (const auto& r : results) {
-            std::cout
-                << rank++ << "     "
-                << r.score << "     "
-                << docStore.getFilename(r.docid)
-                << "\n";
+        for (const auto& res : results)
+        {
+            const auto& doc = docStore.getDocument(res.docid);
+
+            std::cout << "-------------------------\n";
+            std::cout << "File: " << doc.filename << "\n";
+            std::cout << "Path: " << doc.filepath << "\n";
+            std::cout << "Size: " << doc.filesize << " bytes\n";
+            std::cout << "Score: " << res.score << "\n";
         }
     }
 
