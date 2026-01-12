@@ -27,7 +27,23 @@ auto QueryProcessor::processQuery(
         std::string normalized = strutil.normalizeword(token);
         if (normalized.empty()) continue;
 
-        if (!trie.startsWith(normalized)) continue;
+        if (!trie.startsWith(normalized)) 
+        {
+            report.enable_module("QUERY");
+            report.log("QUERY", DEBUG_log::INFO,
+            "No prefix found for token: " + normalized);
+            report.disable_module("QUERY");
+            continue;
+        }
+
+        if (!index.hasWord(normalized)) 
+        {
+            report.enable_module("QUERY");
+            report.log("QUERY", DEBUG_log::INFO,
+            "Prefix exists but exact word not found: " + normalized);
+            report.disable_module("QUERY");
+            continue;
+        }
 
         auto postings = index.getPostings(normalized);
         if (!postings) continue;

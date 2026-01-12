@@ -22,3 +22,7 @@
 
 [Mon Jan 12 12:31:10 2026], [QUERY],  [ WARNING ] [-Invalid query tokens-]
 
+[Mon Jan 12 14:14:54 2026], [TOKEN],  [ WARNING ] [- ERROR::TOKEN->!!!NOT CLEANED CORRECTLY!!!-]
+
+[Mon Jan 12 14:14:58 2026], [TOKEN],  [ WARNING ] [- ERROR::TOKEN->!!!NOT CLEANED CORRECTLY!!!-]
+
