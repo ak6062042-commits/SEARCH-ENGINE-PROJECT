@@ -30,3 +30,7 @@
 
 [Mon Jan 12 14:23:25 2026], [QUERY],  [ INFO ] [-No prefix found for token: anas-]
 
+[Tue Jan 13 14:42:16 2026], [QUERY],  [ INFO ] [-No prefix found for token: hello-]
+
+[Tue Jan 13 15:34:11 2026], [QUERY],  [ INFO ] [-Prefix exists but exact word not found: artifi-]
+

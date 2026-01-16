@@ -12,6 +12,7 @@ int main()
     DocumentStore docStore;
     InvertedIndex index;
     Trie trie;
+
     QueryProcessor qp(docStore, index, trie);
     DF_Util dfutil;
 
