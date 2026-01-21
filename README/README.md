@@ -49,3 +49,86 @@
 └── SearchEngine.exe
 
 ====================================================================================
+
+2. Class Summary
+DocumentStore
+struct Document {
+    Docid id;
+    std::string filename;
+    std::string filepath;
+    size_t filesize;
+};
+
+
+Functions: addDocument(), getFilename(), getFilepath(), getAllDocuments(), hasDocument()
+
+InvertedIndex
+
+Stores mapping: word → {docid → frequency}
+
+Functions: addWord(), addDocument(), getPostings(), hasWord(), clear()
+
+Trie
+
+Node structure: bool is_end, unordered_map<char, TrieNode*> children
+
+Functions: insert(word), search(word), startsWith(prefix)
+
+QueryProcessor
+
+Functions: processQuery(query), getFilenames(docids)
+
+Features: tokenization, normalization, ranking, AND/OR logic, logging
+
+Utilities
+
+StrUtil: tokenize(), normalizeword(), trim()
+
+DF_Util: scanDataFolder(), validateDataFolder()
+
+DEBUG_log: log(), enable_module(), disable_module()
+
+3. Logging Usage
+
+Enable logs at different levels: INFO, WARNING, ERROR
+
+Log examples:
+
+Invalid token
+
+Prefix exists but word not found
+
+Document ID out of range
+
+Log file: log/debug_log.txt
+
+4. How to Build
+
+Open Command Prompt in scripts/ directory
+
+Run:
+
+build.bat
+
+
+Output executable: SearchEngine.exe
+
+5. How to Run
+SearchEngine.exe
+
+
+Enter queries interactively
+
+Type exit to quit
+
+6. Future Work
+
+Implement TF-IDF for ranking
+
+Extract query snippets from documents
+
+Add advanced Boolean query parsing
+
+Integrate top-K results
+
+Improve prefix expansion using Trie
