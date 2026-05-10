@@ -18,7 +18,6 @@ auto QueryProcessor::processQuery(
     std::unordered_map<DocumentStore::Docid, int> doc_hit_count;
 
     auto tokens = strutil.tokenize(query);
-    if (!strutil.isValidToken(tokens)) return final_results;
 
     const int token_count = static_cast<int>(tokens.size());
 
@@ -54,6 +53,7 @@ auto QueryProcessor::processQuery(
             doc_hit_count[docid]++;
         }
     }
+    if (!strutil.isValidToken(tokens)) return final_results;
 
     for (const auto& [docid, score] : score_map)
     {

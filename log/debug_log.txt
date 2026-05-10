@@ -34,3 +34,41 @@
 
 [Tue Jan 13 15:34:11 2026], [QUERY],  [ INFO ] [-Prefix exists but exact word not found: artifi-]
 
+[Tue Jan 27 05:04:03 2026], [TOKEN],  [ WARNING ] [- ERROR::TOKEN->!!!NOT CLEANED CORRECTLY!!!-]
+
+[Tue Jan 27 05:04:15 2026], [TOKEN],  [ WARNING ] [- ERROR::TOKEN->!!!NOT CLEANED CORRECTLY!!!-]
+
+[Tue Jan 27 05:04:45 2026], [QUERY],  [ INFO ] [-No prefix found for token: anas-]
+
+[Tue Jan 27 05:04:57 2026], [QUERY],  [ INFO ] [-No prefix found for token: anas-]
+
+[Fri Jan 30 12:57:49 2026], [TOKEN],  [ WARNING ] [- ERROR::TOKEN->!!!NOT CLEANED CORRECTLY!!!-]
+
+[Fri Jan 30 12:57:56 2026], [TOKEN],  [ WARNING ] [- ERROR::TOKEN->!!!NOT CLEANED CORRECTLY!!!-]
+
+[Fri Jan 30 12:58:26 2026], [TOKEN],  [ WARNING ] [- ERROR::TOKEN->!!!NOT CLEANED CORRECTLY!!!-]
+
+[Fri Jan 30 13:02:35 2026], [QUERY],  [ INFO ] [-No prefix found for token: atrificial-]
+
+[Fri Jan 30 13:02:42 2026], [QUERY],  [ INFO ] [-No prefix found for token: atrificiall-]
+
+[Fri Jan 30 13:03:00 2026], [QUERY],  [ INFO ] [-No prefix found for token: atrificial-]
+
+[Fri Jan 30 13:03:03 2026], [QUERY],  [ INFO ] [-No prefix found for token: atrificial-]
+
+[Fri Jan 30 13:05:21 2026], [TOKEN],  [ WARNING ] [- ERROR::TOKEN->!!!NOT CLEANED CORRECTLY!!!-]
+
+[Fri Jan 30 13:10:59 2026], [TOKEN],  [ WARNING ] [- ERROR::TOKEN->!!!NOT CLEANED CORRECTLY!!!-]
+
+[Fri Jan 30 13:11:06 2026], [TOKEN],  [ WARNING ] [- ERROR::TOKEN->!!!NOT CLEANED CORRECTLY!!!-]
+
+[Fri Jan 30 13:14:39 2026], [TOKEN],  [ WARNING ] [- ERROR::TOKEN->!!!NOT CLEANED CORRECTLY!!!-]
+
+[Fri Jan 30 13:17:27 2026], [TOKEN],  [ WARNING ] [- ERROR::TOKEN->!!!NOT CLEANED CORRECTLY!!!-]
+
+[Fri Jan 30 13:17:34 2026], [TOKEN],  [ WARNING ] [- ERROR::TOKEN->!!!NOT CLEANED CORRECTLY!!!-]
+
+[Fri Jan 30 13:21:01 2026], [TOKEN],  [ WARNING ] [- ERROR::TOKEN->!!!NOT CLEANED CORRECTLY!!!-]
+
+[Fri Jan 30 13:21:17 2026], [TOKEN],  [ WARNING ] [- ERROR::TOKEN->!!!NOT CLEANED CORRECTLY!!!-]
+

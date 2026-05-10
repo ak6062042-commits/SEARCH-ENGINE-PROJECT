@@ -121,7 +121,7 @@ std::vector<std::string>& filepath) -> void
 
 //===========================================================================================//
 
-[[nodiscard]] auto StrUtil::tolower(char input) -> char
+[[nodiscard]] auto StrUtil::tolower(char& input) -> char
 {
     return static_cast<char>(std::tolower(static_cast<unsigned char>(input)));
 }
@@ -158,7 +158,7 @@ std::vector<std::string>& filepath) -> void
 {
     std::string cleaned = "";
     for(char ch : input){
-        ch = tolower(ch);
+        ch = StrUtil::tolower(ch);
         if((ch >= 'a' && ch <= 'z') || (ch >= '0' && ch <= '9')) [[likely]] cleaned += ch;
         else continue;
     }

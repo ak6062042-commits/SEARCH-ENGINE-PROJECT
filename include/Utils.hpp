@@ -21,7 +21,7 @@ class StrUtil : public NumUtil
 {
     public:
         //returns a lowerd character
-        [[nodiscard]] auto tolower(char input) -> char;
+        [[nodiscard]] auto tolower(char& input) -> char;
         //trims whitespaces
         [[nodiscard]] auto trim(std::string& input) -> std::string;
         //tokenize words and store in a vector
